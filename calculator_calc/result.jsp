@@ -2,7 +2,7 @@
 <html>
 
 	  <body>
-	  	<label>Calculation result : <%= request.getAttribute("expression") %> <label/>
-
+	  	<p><label>Calculation result : <%= request.getAttribute("expression") %> <label/></br>
+		<p>Calculate <a href = "index.jsp">AGAIN</a>
 	  </body>
 </html>
