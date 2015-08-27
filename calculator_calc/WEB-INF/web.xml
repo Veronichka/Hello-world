@@ -19,4 +19,14 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 		<url-pattern>/calculate</url-pattern>
 	</servlet-mapping>
 
+	<filter>
+		<filter-name>CalcFilter</filter-name>
+		<filter-class>com.example.filter.CalculatorFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CalcFilter</filter-name>
+		<servlet-name>CalcServlet</servlet-name>
+	</filter-mapping>
+
 </web-app>
